@@ -1,5 +1,7 @@
 // Components
-
+import { Hero } from './components/hero';
+import { Days } from './components/days';
+import { Filter } from './components/filter';
 
 // Instruments
 
@@ -7,7 +9,9 @@
 export const App = () => {
     return (
         <main>
-            <h1>Продвинутый виджет погоды</h1>
+            <Hero/>
+            <Days/>
+            <Filter/>
         </main>
     );
 };
