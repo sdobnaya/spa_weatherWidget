@@ -1,4 +1,9 @@
+import { store } from '../lib/redux/init/store';
+
 export const Hero = () => {
+    const data = store.getState();
+    console.log(data);
+
     return (
         <>
             <div className = 'head'>

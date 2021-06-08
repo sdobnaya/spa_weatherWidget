@@ -9,9 +9,9 @@ import { Filter } from './components/filter';
 export const App = () => {
     return (
         <main>
-            <Hero/>
-            <Days/>
-            <Filter/>
+            <Hero />
+            <Days />
+            <Filter />
         </main>
     );
 };
