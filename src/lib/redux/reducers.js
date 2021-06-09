@@ -9,10 +9,10 @@ export const pushInitData = (state = [], action) => {
     }
 };
 
-export const setCurrentId = (state = [], action) => {
+export const currentIdReducer = (state = null, action) => {
     switch (action.type) {
     case types.SET_CURRENT_ID:
-        return [...state, action.payload];
+        return action.payload;
     default:
         return state;
     }
