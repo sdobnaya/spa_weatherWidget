@@ -111,7 +111,7 @@
     "node/prefer-promises/fs": "warn",
     "node/no-unsupported-features/es-syntax": 0,
     "import/no-unresolved": [
-      "error",
+      "warn",
       {
         "commonjs": true,
         "amd": true
@@ -123,7 +123,7 @@
     "import/export": "error",
     "import/prefer-default-export": 0,
     "quotes": [
-      "error",
+      "warn",
       "single"
     ],
     "consistent-return": 0,
@@ -183,7 +183,7 @@
     "no-invalid-regexp": "error",
     "no-irregular-whitespace": "error",
     "no-sparse-arrays": "error",
-    "no-template-curly-in-string": "error",
+    "no-template-curly-in-string": "warn",
     "no-unexpected-multiline": "error",
     "no-unreachable": "error",
     "no-unsafe-finally": "error",
@@ -204,7 +204,7 @@
     "dot-notation": 0,
     "eqeqeq": "error",
     "guard-for-in": "error",
-    "no-alert": "error",
+    "no-alert": "warn",
     "no-caller": "error",
     "no-case-declarations": "error",
     "no-div-regex": "error",
@@ -267,10 +267,10 @@
     "no-unmodified-loop-condition": "error",
     "no-unused-labels": "error",
     "no-useless-call": "error",
-    "no-useless-concat": "error",
+    "no-useless-concat": "warn",
     "no-useless-return": "error",
     "no-with": "error",
-    "prefer-promise-reject-errors": "error",
+    "prefer-promise-reject-errors": "warn",
     "radix": "error",
     "require-await": "error",
     "vars-on-top": "error",
@@ -284,7 +284,7 @@
     "no-buffer-constructor": "error",
     "no-mixed-requires": "error",
     "no-new-require": "error",
-    "no-path-concat": "error",
+    "no-path-concat": "warn",
     "no-process-exit": "error",
     "no-restricted-modules": "error",
     "no-sync": 0,
@@ -343,7 +343,7 @@
     "implicit-arrow-linebreak": "warn",
     "indent": ["error", 4],
     "key-spacing": [
-      "error",
+      "warn",
       {
         "beforeColon": false,
         "afterColon": true,
@@ -464,7 +464,7 @@
     "space-unary-ops": "error",
     "switch-colon-spacing": "error",
     "template-tag-spacing": [
-      "error",
+      "warn",
       "never"
     ],
     "space-before-blocks": "error",
@@ -474,7 +474,7 @@
       "always"
     ],
     "jsx-quotes": [
-      "error",
+      "warn",
       "prefer-single"
     ],
     "react/jsx-equals-spacing": [

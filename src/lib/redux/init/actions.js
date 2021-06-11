@@ -9,3 +9,8 @@ export const setId = (payload) => ({
     type: types.SET_CURRENT_ID,
     payload,
 });
+
+export const setFilter = (payload) => ({
+    type: types.GET_CURRENT_FILTER,
+    payload,
+});

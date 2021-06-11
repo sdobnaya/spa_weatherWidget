@@ -2,11 +2,10 @@
 import { combineReducers } from 'redux';
 
 // Reducers
-import { pushInitData } from '../reducers';
-import { currentIdReducer } from '../reducers';
-
+import { pushInitData, currentIdReducer, currentFilter } from '../reducers';
 
 export const rootReducer = combineReducers({
     pushInitData,
     currentId: currentIdReducer,
+    currentFilter,
 });

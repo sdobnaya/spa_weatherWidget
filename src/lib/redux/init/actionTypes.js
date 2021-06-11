@@ -1,4 +1,5 @@
 export const types = {
     SET_INIT_STATE: 'SET_INIT_STATE',
     SET_CURRENT_ID: 'SET_CURRENT_ID',
+    GET_CURRENT_FILTER: 'SET_CURRENT_FILTER',
 };
