@@ -11,51 +11,26 @@ const applyFilter = (filter, data) => {
     for (const i in filter) {
         if (filter[ i ]) {
             filtersArr.push(i);
-            console.log(i);
         }
     }
-    console.log('to chto nuzno', filtersArr);
 
     if (filtersArr.indexOf('min-temperature') !== -1) {
         resultedArr = resultedArr?.filter((day) => { return day.temperature >= filter[ 'min-temperature' ]; });
-
-        console.log('min', resultedArr);
-
-        // return resultedArr;
     }
 
     console.log('mezdu', resultedArr);
 
     if (filtersArr.indexOf('max-temperature') !== -1) {
         resultedArr = resultedArr?.filter((day) => { return day.temperature <= filter[ 'max-temperature' ]; });
-
-        console.log('max', resultedArr);
-
-        // return resultedArr;
     }
-
-    console.log('mezdu2', resultedArr);
 
     if (filtersArr.indexOf('cloudly') !== -1) {
         resultedArr = resultedArr?.filter((day) => { return day.type === 'rainy' || day.type === 'cloudy'; });
-
-        console.log('cl', resultedArr);
-
-        // return resultedArr;
     }
-
-    console.log('mezdu3', resultedArr);
 
     if (filtersArr.indexOf('sunny') !== -1) {
         resultedArr = resultedArr?.filter((day) => { return day.type === 'sunny'; });
-
-        console.log('sun', resultedArr);
-
-        // return resultedArr;
     }
-
-    console.log('posle', resultedArr);
-    // return data?.filter((day) => { return day.temperature >= filter[ 'min-temperature' ]; });
 
     if (resultedArr?.length === 0) {
         alert('Нет дней по заданным параметрам');

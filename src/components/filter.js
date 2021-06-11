@@ -18,7 +18,6 @@ export const Filter = () => {
 
     const submitForm = handleSubmit((values) => {
         dispatch(setFilter(values));
-        console.log(values);
     });
 
     const fullSubmit = () => {

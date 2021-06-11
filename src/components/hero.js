@@ -10,7 +10,6 @@ export const Hero = () => {
     if (theDay) {
         const deLocale = ru;
         today = format(theDay?.day, 'dd MMMM yyyy', { locale: deLocale });
-        console.log(today);
     }
 
     const dayOfWeek = new Date(theDay?.day).toLocaleDateString('ru-RU', {
