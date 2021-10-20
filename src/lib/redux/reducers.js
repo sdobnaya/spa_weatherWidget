@@ -1,8 +1,8 @@
 import { types } from './init/actionTypes';
 
 const initialState = {
-    sunny: '',
-    cloudly: '',
+    sunny:             '',
+    cloudly:           '',
     'min-temperature': '',
     'max-temperature': '',
 };

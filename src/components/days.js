@@ -18,7 +18,6 @@ const applyFilter = (filter, data) => {
         resultedArr = resultedArr?.filter((day) => { return day.temperature >= filter[ 'min-temperature' ]; });
     }
 
-    console.log('mezdu', resultedArr);
 
     if (filtersArr.indexOf('max-temperature') !== -1) {
         resultedArr = resultedArr?.filter((day) => { return day.temperature <= filter[ 'max-temperature' ]; });
@@ -56,7 +55,7 @@ export const Days = () => {
     const filteredArr = applyFilter(filter, initialState);
 
     const allDays = filteredArr?.map((day) => <Day
-        key = { day.id } { ...day }/>);
+        key = { day.id } { ...day } />);
 
     return (
         <div className = 'forecast'>

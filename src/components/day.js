@@ -12,7 +12,6 @@ export const Day = ({
     // Обработка данных дня
     const deLocale = ru;
     const today = format(day, 'dd MMMM yyyy', { locale: deLocale });
-    console.log(today);
 
     const dayOfWeek = new Date(day).toLocaleDateString('ru-RU', {
         weekday: 'long',
