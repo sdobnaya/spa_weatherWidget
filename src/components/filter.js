@@ -28,8 +28,8 @@ export const Filter = () => {
     const undoFilter = handleSubmit(() => {
         theFlag = 0;
         const initialState = {
-            sunny: '',
-            cloudly: '',
+            sunny:             '',
+            cloudly:           '',
             'min-temperature': '',
             'max-temperature': '',
         };
