@@ -1,31 +1,22 @@
-1. Для установки зависимостей выполни:
+# Widget-like SPA (functional React/Redux/React-Query)
 
-```sh
-yarn
-# или
-npm i
-```
+A single-page application that displays the weather forecast for the week. It has a function to filter the days according to given parameters.
 
-2. Для запуска проекта выполни:
+To run this on your PC you need to do the following:
 
-```sh
-yarn dev
-# или
-npm run dev
-```
+1.  Clone the repo:
 
-3. Для сборки проекта выполни:
+        git clone https://github.com/sdobnaya/spa_weatherWidget.git
 
-```sh
-yarn build
-# или
-npm run build
-```
+2.  Install dependencies using:
 
-4. Для запуска проекта в режиме `production` выполни:
+       ```
+        npm install || yarn
+       ```
 
-```sh
-yarn build && yarn start  
-# или
-npm run build && npm run start
-```
+3.  Run webpack:
+
+       ```
+        npm run dev || yarn dev
+       ```
+    
